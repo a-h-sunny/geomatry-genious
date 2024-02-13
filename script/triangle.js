@@ -11,6 +11,11 @@ function triangleArea(){
     const areaSpan = document.getElementById('area-span');
     areaSpan.innerText = Area;
 
+    const areaCalculation = document.getElementById('area-cal');
+    const p = document.createElement('p');
+    p.innerText ='triangle',Area;
+    areaCalculation.appendChild(p);
+
 }
 
 function ractangleArea(){
@@ -26,4 +31,21 @@ function ractangleArea(){
 
     const ractSpan = document.getElementById('ract-span');
     ractSpan.innerText = ractArea;
+}
+
+function parallelogramArea(){
+    const inputBase = document.getElementById('input-base');
+    const parallalBase = inputBase.value;
+    const base = parseFloat(parallalBase);
+
+    const inputHeight = document.getElementById('input-height');
+    const parrallalHeight = inputHeight.value;
+    const height = parseFloat(parrallalHeight);
+
+    const parallelArea = base * height;
+
+    const parellelSpan = document.getElementById('parallel-span');
+    parellelSpan.innerText = parallelArea;
+
+    
 }
